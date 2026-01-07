@@ -1,10 +1,9 @@
-# src/data/ingest.py
-import pandas as pd
-from pathlib import Path
 import logging
+from pathlib import Path
 from typing import List, Optional
 
-# Setup simple logging
+import pandas as pd
+
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
 

@@ -1,16 +1,17 @@
-# src/data/preprocessor.py
-import pandas as pd
-import numpy as np
-from pathlib import Path
 import logging
-import joblib 
-from sklearn.preprocessing import StandardScaler, OneHotEncoder
+from pathlib import Path
+
+import joblib
+import pandas as pd
 from sklearn.compose import ColumnTransformer
-from sklearn.pipeline import Pipeline
 from sklearn.impute import SimpleImputer
+from sklearn.pipeline import Pipeline
+from sklearn.preprocessing import OneHotEncoder, StandardScaler
+
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
+
 
 PROCESSED_DATA_DIR = Path("data/processed")
 MODELS_DIR = Path("models")
