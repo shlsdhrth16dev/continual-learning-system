@@ -1,0 +1,7 @@
+{
+  "batch_name": "batch_v1",
+  "model_version": "v1",
+  "timestamp": "2026-01-07T12:22:57.746227",
+  "severity": "none",
+  "drifted_features": {}
+}

@@ -5,3 +5,4 @@ numpy
 xlrd
 pytest
 flake8
+pyarrow
