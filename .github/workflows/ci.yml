@@ -54,6 +54,8 @@ jobs:
         else
           echo "No tests directory found, skipping tests"
         fi
+      env:
+        PYTHONPATH: ${{ github.workspace }}
     
     - name: Upload coverage reports
       uses: codecov/codecov-action@v4
