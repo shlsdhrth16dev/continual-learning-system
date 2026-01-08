@@ -114,13 +114,11 @@ def load_production_model(use_cache: bool = True) -> Tuple[Any, Dict[str, Any]]:
 
 def clear_model_cache(version: Optional[str] = None) -> None:
     """
-    Clear the model cache.
+   Clear the model cache.
     
     Args:
         version: Specific version to clear, or None to clear all
     """
-    global _model_cache
-    
     if version:
         if version in _model_cache:
             del _model_cache[version]
