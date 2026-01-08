@@ -4,3 +4,9 @@
 2026-01-08 21:03:41 - src.utils.validation - INFO - Target distribution: {1: 57, 0: 43}
 2026-01-08 21:03:41 - src.training.trainer - INFO - Data split - Train: 69, Val: 16, Test: 15
 2026-01-08 21:03:41 - src.training.trainer - INFO - Class imbalance detected (9.0:1). Using balanced class weights.
+2026-01-08 21:15:33 - test_logger - INFO - Test log message
+2026-01-08 21:15:33 - src.registry.model_registry - INFO - Initialized registry at C:\Users\sidha\AppData\Local\Temp\tmpmog6pjq_\registry\registry.json
+2026-01-08 21:15:33 - src.registry.model_registry - INFO - Registered model model_v1 with metrics: {'accuracy': 0.85, 'f1': 0.83}
+2026-01-08 21:15:34 - src.utils.validation - INFO - Target distribution: {1: 57, 0: 43}
+2026-01-08 21:15:34 - src.training.trainer - INFO - Data split - Train: 69, Val: 16, Test: 15
+2026-01-08 21:15:34 - src.training.trainer - INFO - Class imbalance detected (9.0:1). Using balanced class weights.
