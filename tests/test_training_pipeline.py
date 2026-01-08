@@ -187,7 +187,8 @@ class TestMetricsCalculation:
         assert 'f1' in metrics
         
         # Check accuracy calculation
-        expected_accuracy = 5 / 8  # 5 correct out of 8
+        # Matches: 6 out of 8 (indices 0, 2, 3, 4, 6, 7)
+        expected_accuracy = 0.75
         assert metrics['accuracy'] == pytest.approx(expected_accuracy, abs=0.01)
     
     def test_calculate_metrics_with_probabilities(self):

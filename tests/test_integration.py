@@ -63,16 +63,13 @@ def test_registry_basic_operations():
     temp_path = Path(temp_dir)
     
     try:
-        # Monkey patch the paths
-        from src.utils import paths
-        orig_registry_path = paths.REGISTRY_PATH
-        orig_registry_dir = paths.REGISTRY_DIR
-        orig_models_dir = paths.MODELS_DIR
+        # Monkey patch the paths in model_registry
+        import src.registry.model_registry as mr
         
-        paths.REGISTRY_PATH = temp_path / 'registry' / 'registry.json'
-        paths.REGISTRY_DIR = temp_path / 'registry'
-        paths.MODELS_DIR = temp_path / 'models'
-        
+        # Use explicit overrides via the module
+        mr.paths.set_registry_path_override(temp_path / 'registry' / 'registry.json')
+        mr.paths.set_models_dir_override(temp_path / 'models')
+
         # Now test registry
         from src.registry.model_registry import initialize_registry, register_model, load_registry
         
@@ -87,10 +84,12 @@ def test_registry_basic_operations():
         assert len(registry['history']) == 1
         assert registry['history'][0]['version'] == 'model_v1'
         
-        # Restore original paths
-        paths.REGISTRY_PATH = orig_registry_path
-        paths.REGISTRY_DIR = orig_registry_dir
-        paths.MODELS_DIR = orig_models_dir
+        # Cleanup paths
+        if temp_dir and os.path.exists(temp_dir):
+            shutil.rmtree(temp_dir)
+            
+        mr.paths.set_registry_path_override(None)
+        mr.paths.set_models_dir_override(None)
         
     finally:
         shutil.rmtree(temp_dir)

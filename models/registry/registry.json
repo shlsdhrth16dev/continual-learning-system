@@ -1,13 +1,1 @@
-{
-    "latest_production": "model_v1",
-    "history": [
-        {
-            "version": "model_v1",
-            "trained_on": "2026-01-07",
-            "status": "production",
-            "metrics": {
-                "accuracy": 0.80
-            }
-        }
-    ]
-}
+{"latest_production": null}

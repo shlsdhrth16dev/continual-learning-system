@@ -1,0 +1,67 @@
+name: MLOps - Monitoring & Retraining
+
+on:
+  schedule:
+    # Run daily at 2 AM UTC
+    - cron: '0 2 * * *'
+  workflow_dispatch:
+    inputs:
+      force_retrain:
+        description: 'Force retraining regardless of drift'
+        required: false
+        default: 'false'
+        type: boolean
+
+jobs:
+  drift-monitoring:
+    name: Drift Detection & Auto-Retraining
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write  # Allow committing back to repo if needed (optional)
+    
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: "3.10"
+        cache: 'pip'
+        
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+        
+    - name: Initialize Operations
+      env:
+        PYTHONPATH: .
+      run: |
+        python -c "from src.utils.paths import ensure_all_directories; ensure_all_directories()"
+        
+    - name: Run Monitoring Pipeline
+      env:
+        PYTHONPATH: .
+      run: |
+        if [ "${{ inputs.force_retrain }}" == "true" ]; then
+          echo "Force retraining triggered..."
+          python scripts/run_monitoring_pipeline.py --force-retrain
+        else
+          python scripts/run_monitoring_pipeline.py
+        fi
+
+    - name: Upload Drift Reports
+      uses: actions/upload-artifact@v4
+      if: always()
+      with:
+        name: drift-report-${{ github.sha }}
+        path: data/drift_reports/
+        retention-days: 30
+
+    - name: Upload Registry Artifacts
+      uses: actions/upload-artifact@v4
+      if: always()
+      with:
+        name: model-registry-state
+        path: models/registry/
+        retention-days: 90

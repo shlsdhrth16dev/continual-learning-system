@@ -2,11 +2,10 @@
 Model loading utilities with caching and fallback capabilities.
 """
 import joblib
-from pathlib import Path
 from typing import Optional, Any, Tuple, Dict
 
 from src.registry.model_registry import load_registry, get_model_by_version, get_production_model
-from src.utils.paths import get_model_version_path
+from src.utils import paths
 from src.utils.logging_config import get_logger
 from src.utils.validation import validate_model_artifact
 
@@ -45,7 +44,8 @@ def load_model_by_version(
         raise ValueError(f"Model version {version} not found in registry")
     
     # Validate model file exists and is loadable
-    model_path = get_model_version_path(version) / "model.pkl"
+    # Validate model file exists and is loadable
+    model_path = paths.get_model_version_path(version) / "model.pkl"
     is_valid, msg = validate_model_artifact(model_path)
     
     if not is_valid:

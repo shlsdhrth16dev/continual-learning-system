@@ -3,7 +3,7 @@ Path management for the continual learning system.
 Provides centralized path definitions and utilities.
 """
 from pathlib import Path
-from typing import List
+from typing import Optional
 
 # Base directory
 BASE_DIR = Path(__file__).resolve().parents[2]
@@ -94,6 +94,32 @@ def get_model_version_path(version: str) -> Path:
     """
     return MODELS_DIR / version
 
+
+# Overrides for testing
+_OVERRIDE_REGISTRY_PATH = None
+_OVERRIDE_MODELS_DIR = None
+
+def get_registry_path() -> Path:
+    """Get the current registry path."""
+    if _OVERRIDE_REGISTRY_PATH:
+        return _OVERRIDE_REGISTRY_PATH
+    return REGISTRY_PATH
+
+def get_models_dir() -> Path:
+    """Get the current models directory."""
+    if _OVERRIDE_MODELS_DIR:
+        return _OVERRIDE_MODELS_DIR
+    return MODELS_DIR
+
+def set_registry_path_override(path: Optional[Path]):
+    """Set override for registry path (for testing)."""
+    global _OVERRIDE_REGISTRY_PATH
+    _OVERRIDE_REGISTRY_PATH = path
+
+def set_models_dir_override(path: Optional[Path]):
+    """Set override for models directory (for testing)."""
+    global _OVERRIDE_MODELS_DIR
+    _OVERRIDE_MODELS_DIR = path
 
 def get_latest_file(directory: Path, pattern: str = "*") -> Path:
     """

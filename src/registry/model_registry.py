@@ -2,19 +2,19 @@
 Model registry for tracking and managing model versions.
 Provides thread-safe operations for model lifecycle management.
 """
+from datetime import datetime
+from pathlib import Path
 import json
+from typing import Dict, Any, List, Optional, Tuple
+from contextlib import contextmanager
 try:
     import fcntl
     HAS_FCNTL = True
 except ImportError:
-    # Windows doesn't have fcntl
     HAS_FCNTL = False
-from datetime import datetime
-from pathlib import Path
-from typing import Dict, Any, List, Optional, Tuple
-from contextlib import contextmanager
 
-from src.utils.paths import REGISTRY_PATH, MODELS_DIR, ensure_directory
+from src.utils import paths
+from src.utils.paths import ensure_directory
 from src.utils.logging_config import get_logger
 
 logger = get_logger(__name__)
@@ -32,10 +32,10 @@ def _lock_registry():
     Uses file locking to prevent race conditions.
     """
     # Ensure registry directory exists
-    ensure_directory(REGISTRY_PATH.parent)
+    ensure_directory(paths.REGISTRY_PATH.parent)
     
     # Create lock file
-    lock_file = REGISTRY_PATH.parent / ".registry.lock"
+    lock_file = paths.REGISTRY_PATH.parent / ".registry.lock"
     
     try:
         with open(lock_file, 'w') as lock:
@@ -95,11 +95,12 @@ def load_registry() -> Dict[str, Any]:
     Raises:
         RegistryError: If registry doesn't exist or is invalid
     """
-    if not REGISTRY_PATH.exists():
-        raise RegistryError(f"Registry not found at {REGISTRY_PATH}. Initialize registry first.")
+    reg_path = paths.get_registry_path()
+    if not reg_path.exists():
+        raise RegistryError(f"Registry not found at {reg_path}. Initialize registry first.")
     
     try:
-        with open(REGISTRY_PATH, "r") as f:
+        with open(reg_path, "r") as f:
             registry = json.load(f)
         
         _validate_registry_schema(registry)
@@ -123,17 +124,18 @@ def save_registry(registry: Dict[str, Any]) -> None:
     """
     _validate_registry_schema(registry)
     
-    ensure_directory(REGISTRY_PATH.parent)
+    reg_path = paths.get_registry_path()
+    ensure_directory(reg_path.parent)
     
     try:
         # Write to temporary file first for atomicity
-        temp_path = REGISTRY_PATH.parent / f"{REGISTRY_PATH.name}.tmp"
+        temp_path = reg_path.parent / f"{reg_path.name}.tmp"
         with open(temp_path, "w") as f:
             json.dump(registry, f, indent=2)
         
         # Atomic rename
-        temp_path.replace(REGISTRY_PATH)
-        logger.debug(f"Registry saved to {REGISTRY_PATH}")
+        temp_path.replace(reg_path)
+        logger.debug(f"Registry saved to {reg_path}")
         
     except Exception as e:
         raise RegistryError(f"Failed to save registry: {e}")
@@ -149,8 +151,9 @@ def initialize_registry(force: bool = False) -> None:
     Raises:
         RegistryError: If registry exists and force=False
     """
-    if REGISTRY_PATH.exists() and not force:
-        raise RegistryError(f"Registry already exists at {REGISTRY_PATH}")
+    reg_path = paths.get_registry_path()
+    if reg_path.exists() and not force:
+        raise RegistryError(f"Registry already exists at {reg_path}")
     
     registry = {
         "latest_production": None,
@@ -160,7 +163,7 @@ def initialize_registry(force: bool = False) -> None:
     }
     
     save_registry(registry)
-    logger.info(f"Initialized registry at {REGISTRY_PATH}")
+    logger.info(f"Initialized registry at {reg_path}")
 
 
 def get_next_version() -> str:

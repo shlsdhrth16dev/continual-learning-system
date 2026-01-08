@@ -24,13 +24,17 @@ def temp_registry_dir(monkeypatch):
     temp_dir = tempfile.mkdtemp()
     temp_path = Path(temp_dir)
     
-    # Monkey patch the registry path
-    from src.utils import paths
-    monkeypatch.setattr(paths, 'REGISTRY_PATH', temp_path / 'registry.json')
-    monkeypatch.setattr(paths, 'REGISTRY_DIR', temp_path)
-    monkeypatch.setattr(paths, 'MODELS_DIR', temp_path / 'models')
+    # Use explicit overrides
+    import src.registry.model_registry as mr
+    
+    mr.paths.set_registry_path_override(temp_path / 'registry.json')
+    mr.paths.set_models_dir_override(temp_path / 'models')
     
     yield temp_path
+    
+    # Cleanup overrides
+    mr.paths.set_registry_path_override(None)
+    mr.paths.set_models_dir_override(None)
     
     # Cleanup
     shutil.rmtree(temp_dir)

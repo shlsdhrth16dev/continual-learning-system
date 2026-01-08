@@ -10,3 +10,354 @@
 2026-01-08 21:15:34 - src.utils.validation - INFO - Target distribution: {1: 57, 0: 43}
 2026-01-08 21:15:34 - src.training.trainer - INFO - Data split - Train: 69, Val: 16, Test: 15
 2026-01-08 21:15:34 - src.training.trainer - INFO - Class imbalance detected (9.0:1). Using balanced class weights.
+2026-01-08 21:49:03 - test_logger - INFO - Test log message
+2026-01-08 21:49:04 - src.utils.validation - INFO - Target distribution: {1: 57, 0: 43}
+2026-01-08 21:49:04 - src.training.trainer - INFO - Data split - Train: 69, Val: 16, Test: 15
+2026-01-08 21:49:04 - src.training.trainer - INFO - Class imbalance detected (9.0:1). Using balanced class weights.
+2026-01-08 21:49:04 - src.utils.validation - INFO - Target distribution: {0: 103, 1: 97}
+2026-01-08 21:49:04 - src.training.trainer - INFO - Data split - Train: 139, Val: 31, Test: 30
+2026-01-08 21:49:04 - src.utils.validation - INFO - Target distribution: {0: 103, 1: 97}
+2026-01-08 21:49:04 - src.training.trainer - INFO - Data split - Train: 139, Val: 31, Test: 30
+2026-01-08 21:49:04 - src.training.trainer - INFO - Class imbalance detected (9.0:1). Using balanced class weights.
+2026-01-08 21:49:05 - src.training.trainer - INFO - Training model model_v1 from C:\Users\sidha\AppData\Local\Temp\tmpgcmdtoi0\train_data.csv
+2026-01-08 21:49:05 - src.training.trainer - INFO - Loaded 200 rows, 4 columns
+2026-01-08 21:49:05 - src.utils.validation - INFO - Target distribution: {0: 103, 1: 97}
+2026-01-08 21:49:05 - src.training.trainer - INFO - Data split - Train: 139, Val: 31, Test: 30
+2026-01-08 21:49:05 - src.training.trainer - INFO - Training with config: {'n_estimators': 100, 'max_depth': None, 'min_samples_split': 2, 'min_samples_leaf': 1, 'random_state': 42, 'class_weight': 'balanced', 'n_jobs': -1}
+2026-01-08 21:49:05 - src.training.trainer - INFO - Model saved to C:\Users\sidha\AppData\Local\Temp\tmpgcmdtoi0\models\model_v1\model.pkl
+2026-01-08 21:49:05 - src.training.trainer - INFO - Training complete for model_v1
+2026-01-08 21:49:05 - src.training.trainer - INFO - Training model model_v1 from C:\Users\sidha\AppData\Local\Temp\tmpcoz5l9va\train_data.csv
+2026-01-08 21:49:05 - src.training.trainer - INFO - Loaded 200 rows, 4 columns
+2026-01-08 21:49:05 - src.utils.validation - INFO - Target distribution: {0: 103, 1: 97}
+2026-01-08 21:49:05 - src.training.trainer - INFO - Data split - Train: 139, Val: 31, Test: 30
+2026-01-08 21:49:05 - src.training.trainer - INFO - Training with config: {'n_estimators': 100, 'max_depth': None, 'min_samples_split': 2, 'min_samples_leaf': 1, 'random_state': 42, 'class_weight': 'balanced', 'n_jobs': -1}
+2026-01-08 21:49:05 - src.training.trainer - INFO - Model saved to C:\Users\sidha\AppData\Local\Temp\tmpcoz5l9va\models\model_v1\model.pkl
+2026-01-08 21:49:05 - src.training.trainer - INFO - Training complete for model_v1
+2026-01-08 21:49:05 - src.training.trainer - INFO - Training model model_v1 from C:\Users\sidha\AppData\Local\Temp\tmp3bmdgqkc\tiny_data.csv
+2026-01-08 21:49:05 - src.training.trainer - INFO - Loaded 3 rows, 2 columns
+2026-01-08 21:49:05 - src.training.trainer - INFO - Training model model_v1 from C:\Users\sidha\AppData\Local\Temp\tmphi2vh0xh\train_data.csv
+2026-01-08 21:49:05 - src.training.trainer - INFO - Loaded 200 rows, 4 columns
+2026-01-08 21:49:05 - src.utils.validation - INFO - Target distribution: {0: 103, 1: 97}
+2026-01-08 21:49:05 - src.training.trainer - INFO - Data split - Train: 139, Val: 31, Test: 30
+2026-01-08 21:49:05 - src.training.trainer - INFO - Training with config: {'n_estimators': 100, 'max_depth': None, 'min_samples_split': 2, 'min_samples_leaf': 1, 'random_state': 42, 'class_weight': 'balanced', 'n_jobs': -1}
+2026-01-08 21:49:06 - src.training.trainer - INFO - Model saved to C:\Users\sidha\AppData\Local\Temp\tmphi2vh0xh\models\model_v1\model.pkl
+2026-01-08 21:49:06 - src.training.trainer - INFO - Training complete for model_v1
+2026-01-08 21:49:06 - src.training.evaluator - INFO - Evaluating model model_v1
+2026-01-08 21:49:06 - src.training.evaluator - INFO - Using saved test set for evaluation
+2026-01-08 21:49:06 - src.training.evaluator - INFO - Evaluating on 30 samples
+2026-01-08 21:49:06 - src.training.trainer - INFO - Training model model_v1 from C:\Users\sidha\AppData\Local\Temp\tmpzx_4avdx\train_data.csv
+2026-01-08 21:49:06 - src.training.trainer - INFO - Loaded 200 rows, 4 columns
+2026-01-08 21:49:06 - src.utils.validation - INFO - Target distribution: {0: 103, 1: 97}
+2026-01-08 21:49:06 - src.training.trainer - INFO - Data split - Train: 139, Val: 31, Test: 30
+2026-01-08 21:49:06 - src.training.trainer - INFO - Training with config: {'n_estimators': 100, 'max_depth': None, 'min_samples_split': 2, 'min_samples_leaf': 1, 'random_state': 42, 'class_weight': 'balanced', 'n_jobs': -1}
+2026-01-08 21:49:06 - src.training.trainer - INFO - Model saved to C:\Users\sidha\AppData\Local\Temp\tmpzx_4avdx\models\model_v1\model.pkl
+2026-01-08 21:49:06 - src.training.trainer - INFO - Training complete for model_v1
+2026-01-08 21:49:06 - src.training.evaluator - INFO - Evaluating model model_v1
+2026-01-08 21:49:06 - src.training.evaluator - INFO - Using saved test set for evaluation
+2026-01-08 21:49:06 - src.training.evaluator - INFO - Evaluating on 30 samples
+2026-01-08 21:50:08 - test_logger - INFO - Test log message
+2026-01-08 21:50:08 - src.utils.validation - INFO - Target distribution: {1: 57, 0: 43}
+2026-01-08 21:50:08 - src.training.trainer - INFO - Data split - Train: 69, Val: 16, Test: 15
+2026-01-08 21:50:08 - src.training.trainer - INFO - Class imbalance detected (9.0:1). Using balanced class weights.
+2026-01-08 21:50:09 - src.utils.validation - INFO - Target distribution: {0: 103, 1: 97}
+2026-01-08 21:50:09 - src.training.trainer - INFO - Data split - Train: 139, Val: 31, Test: 30
+2026-01-08 21:50:09 - src.utils.validation - INFO - Target distribution: {0: 103, 1: 97}
+2026-01-08 21:50:09 - src.training.trainer - INFO - Data split - Train: 139, Val: 31, Test: 30
+2026-01-08 21:50:09 - src.training.trainer - INFO - Class imbalance detected (9.0:1). Using balanced class weights.
+2026-01-08 21:50:09 - src.training.trainer - INFO - Training model model_v1 from C:\Users\sidha\AppData\Local\Temp\tmpzxk5jd1x\train_data.csv
+2026-01-08 21:50:09 - src.training.trainer - INFO - Loaded 200 rows, 4 columns
+2026-01-08 21:50:09 - src.utils.validation - INFO - Target distribution: {0: 103, 1: 97}
+2026-01-08 21:50:09 - src.training.trainer - INFO - Data split - Train: 139, Val: 31, Test: 30
+2026-01-08 21:50:09 - src.training.trainer - INFO - Training with config: {'n_estimators': 100, 'max_depth': None, 'min_samples_split': 2, 'min_samples_leaf': 1, 'random_state': 42, 'class_weight': 'balanced', 'n_jobs': -1}
+2026-01-08 21:50:09 - src.training.trainer - INFO - Model saved to C:\Users\sidha\AppData\Local\Temp\tmpzxk5jd1x\models\model_v1\model.pkl
+2026-01-08 21:50:09 - src.training.trainer - INFO - Training complete for model_v1
+2026-01-08 21:50:09 - src.training.trainer - INFO - Training model model_v1 from C:\Users\sidha\AppData\Local\Temp\tmpmg_28pgv\train_data.csv
+2026-01-08 21:50:09 - src.training.trainer - INFO - Loaded 200 rows, 4 columns
+2026-01-08 21:50:09 - src.utils.validation - INFO - Target distribution: {0: 103, 1: 97}
+2026-01-08 21:50:09 - src.training.trainer - INFO - Data split - Train: 139, Val: 31, Test: 30
+2026-01-08 21:50:09 - src.training.trainer - INFO - Training with config: {'n_estimators': 100, 'max_depth': None, 'min_samples_split': 2, 'min_samples_leaf': 1, 'random_state': 42, 'class_weight': 'balanced', 'n_jobs': -1}
+2026-01-08 21:50:09 - src.training.trainer - INFO - Model saved to C:\Users\sidha\AppData\Local\Temp\tmpmg_28pgv\models\model_v1\model.pkl
+2026-01-08 21:50:09 - src.training.trainer - INFO - Training complete for model_v1
+2026-01-08 21:50:09 - src.training.trainer - INFO - Training model model_v1 from C:\Users\sidha\AppData\Local\Temp\tmp1gsr5u26\tiny_data.csv
+2026-01-08 21:50:09 - src.training.trainer - INFO - Loaded 3 rows, 2 columns
+2026-01-08 21:50:09 - src.training.trainer - INFO - Training model model_v1 from C:\Users\sidha\AppData\Local\Temp\tmpvub2xzi_\train_data.csv
+2026-01-08 21:50:09 - src.training.trainer - INFO - Loaded 200 rows, 4 columns
+2026-01-08 21:50:09 - src.utils.validation - INFO - Target distribution: {0: 103, 1: 97}
+2026-01-08 21:50:09 - src.training.trainer - INFO - Data split - Train: 139, Val: 31, Test: 30
+2026-01-08 21:50:09 - src.training.trainer - INFO - Training with config: {'n_estimators': 100, 'max_depth': None, 'min_samples_split': 2, 'min_samples_leaf': 1, 'random_state': 42, 'class_weight': 'balanced', 'n_jobs': -1}
+2026-01-08 21:50:10 - src.training.trainer - INFO - Model saved to C:\Users\sidha\AppData\Local\Temp\tmpvub2xzi_\models\model_v1\model.pkl
+2026-01-08 21:50:10 - src.training.trainer - INFO - Training complete for model_v1
+2026-01-08 21:50:10 - src.training.evaluator - INFO - Evaluating model model_v1
+2026-01-08 21:50:10 - src.training.evaluator - INFO - Using saved test set for evaluation
+2026-01-08 21:50:10 - src.training.evaluator - INFO - Evaluating on 30 samples
+2026-01-08 21:50:10 - src.training.trainer - INFO - Training model model_v1 from C:\Users\sidha\AppData\Local\Temp\tmpqidtvoj5\train_data.csv
+2026-01-08 21:50:10 - src.training.trainer - INFO - Loaded 200 rows, 4 columns
+2026-01-08 21:50:10 - src.utils.validation - INFO - Target distribution: {0: 103, 1: 97}
+2026-01-08 21:50:10 - src.training.trainer - INFO - Data split - Train: 139, Val: 31, Test: 30
+2026-01-08 21:50:10 - src.training.trainer - INFO - Training with config: {'n_estimators': 100, 'max_depth': None, 'min_samples_split': 2, 'min_samples_leaf': 1, 'random_state': 42, 'class_weight': 'balanced', 'n_jobs': -1}
+2026-01-08 21:50:10 - src.training.trainer - INFO - Model saved to C:\Users\sidha\AppData\Local\Temp\tmpqidtvoj5\models\model_v1\model.pkl
+2026-01-08 21:50:10 - src.training.trainer - INFO - Training complete for model_v1
+2026-01-08 21:50:10 - src.training.evaluator - INFO - Evaluating model model_v1
+2026-01-08 21:50:10 - src.training.evaluator - INFO - Using saved test set for evaluation
+2026-01-08 21:50:10 - src.training.evaluator - INFO - Evaluating on 30 samples
+2026-01-08 21:51:46 - test_logger - INFO - Test log message
+2026-01-08 21:51:46 - src.utils.validation - INFO - Target distribution: {1: 57, 0: 43}
+2026-01-08 21:51:46 - src.training.trainer - INFO - Data split - Train: 69, Val: 16, Test: 15
+2026-01-08 21:51:46 - src.training.trainer - INFO - Class imbalance detected (9.0:1). Using balanced class weights.
+2026-01-08 21:51:47 - src.utils.validation - INFO - Target distribution: {0: 103, 1: 97}
+2026-01-08 21:51:47 - src.training.trainer - INFO - Data split - Train: 139, Val: 31, Test: 30
+2026-01-08 21:51:47 - src.utils.validation - INFO - Target distribution: {0: 103, 1: 97}
+2026-01-08 21:51:47 - src.training.trainer - INFO - Data split - Train: 139, Val: 31, Test: 30
+2026-01-08 21:51:47 - src.training.trainer - INFO - Class imbalance detected (9.0:1). Using balanced class weights.
+2026-01-08 21:51:47 - src.training.trainer - INFO - Training model model_v1 from C:\Users\sidha\AppData\Local\Temp\tmp_lu44im4\train_data.csv
+2026-01-08 21:51:47 - src.training.trainer - INFO - Loaded 200 rows, 4 columns
+2026-01-08 21:51:47 - src.utils.validation - INFO - Target distribution: {0: 103, 1: 97}
+2026-01-08 21:51:47 - src.training.trainer - INFO - Data split - Train: 139, Val: 31, Test: 30
+2026-01-08 21:51:47 - src.training.trainer - INFO - Training with config: {'n_estimators': 100, 'max_depth': None, 'min_samples_split': 2, 'min_samples_leaf': 1, 'random_state': 42, 'class_weight': 'balanced', 'n_jobs': -1}
+2026-01-08 21:51:47 - src.training.trainer - INFO - Model saved to C:\Users\sidha\AppData\Local\Temp\tmp_lu44im4\models\model_v1\model.pkl
+2026-01-08 21:51:47 - src.training.trainer - INFO - Training complete for model_v1
+2026-01-08 21:51:47 - src.training.trainer - INFO - Training model model_v1 from C:\Users\sidha\AppData\Local\Temp\tmp4okpab5u\train_data.csv
+2026-01-08 21:51:47 - src.training.trainer - INFO - Loaded 200 rows, 4 columns
+2026-01-08 21:51:47 - src.utils.validation - INFO - Target distribution: {0: 103, 1: 97}
+2026-01-08 21:51:47 - src.training.trainer - INFO - Data split - Train: 139, Val: 31, Test: 30
+2026-01-08 21:51:47 - src.training.trainer - INFO - Training with config: {'n_estimators': 100, 'max_depth': None, 'min_samples_split': 2, 'min_samples_leaf': 1, 'random_state': 42, 'class_weight': 'balanced', 'n_jobs': -1}
+2026-01-08 21:51:48 - src.training.trainer - INFO - Model saved to C:\Users\sidha\AppData\Local\Temp\tmp4okpab5u\models\model_v1\model.pkl
+2026-01-08 21:51:48 - src.training.trainer - INFO - Training complete for model_v1
+2026-01-08 21:51:48 - src.training.trainer - INFO - Training model model_v1 from C:\Users\sidha\AppData\Local\Temp\tmpgpslm5da\tiny_data.csv
+2026-01-08 21:51:48 - src.training.trainer - INFO - Loaded 3 rows, 2 columns
+2026-01-08 21:51:48 - src.training.trainer - INFO - Training model model_v1 from C:\Users\sidha\AppData\Local\Temp\tmpe16iihxk\train_data.csv
+2026-01-08 21:51:48 - src.training.trainer - INFO - Loaded 200 rows, 4 columns
+2026-01-08 21:51:48 - src.utils.validation - INFO - Target distribution: {0: 103, 1: 97}
+2026-01-08 21:51:48 - src.training.trainer - INFO - Data split - Train: 139, Val: 31, Test: 30
+2026-01-08 21:51:48 - src.training.trainer - INFO - Training with config: {'n_estimators': 100, 'max_depth': None, 'min_samples_split': 2, 'min_samples_leaf': 1, 'random_state': 42, 'class_weight': 'balanced', 'n_jobs': -1}
+2026-01-08 21:51:48 - src.training.trainer - INFO - Model saved to C:\Users\sidha\AppData\Local\Temp\tmpe16iihxk\models\model_v1\model.pkl
+2026-01-08 21:51:48 - src.training.trainer - INFO - Training complete for model_v1
+2026-01-08 21:51:48 - src.training.evaluator - INFO - Evaluating model model_v1
+2026-01-08 21:51:48 - src.training.evaluator - INFO - Using saved test set for evaluation
+2026-01-08 21:51:48 - src.training.evaluator - INFO - Evaluating on 30 samples
+2026-01-08 21:51:48 - src.training.trainer - INFO - Training model model_v1 from C:\Users\sidha\AppData\Local\Temp\tmpxstnk8yj\train_data.csv
+2026-01-08 21:51:48 - src.training.trainer - INFO - Loaded 200 rows, 4 columns
+2026-01-08 21:51:48 - src.utils.validation - INFO - Target distribution: {0: 103, 1: 97}
+2026-01-08 21:51:48 - src.training.trainer - INFO - Data split - Train: 139, Val: 31, Test: 30
+2026-01-08 21:51:48 - src.training.trainer - INFO - Training with config: {'n_estimators': 100, 'max_depth': None, 'min_samples_split': 2, 'min_samples_leaf': 1, 'random_state': 42, 'class_weight': 'balanced', 'n_jobs': -1}
+2026-01-08 21:51:49 - src.training.trainer - INFO - Model saved to C:\Users\sidha\AppData\Local\Temp\tmpxstnk8yj\models\model_v1\model.pkl
+2026-01-08 21:51:49 - src.training.trainer - INFO - Training complete for model_v1
+2026-01-08 21:51:49 - src.training.evaluator - INFO - Evaluating model model_v1
+2026-01-08 21:51:49 - src.training.evaluator - INFO - Using saved test set for evaluation
+2026-01-08 21:51:49 - src.training.evaluator - INFO - Evaluating on 30 samples
+2026-01-08 21:56:07 - test_logger - INFO - Test log message
+2026-01-08 21:56:07 - src.utils.validation - INFO - Target distribution: {1: 57, 0: 43}
+2026-01-08 21:56:07 - src.training.trainer - INFO - Data split - Train: 69, Val: 16, Test: 15
+2026-01-08 21:56:07 - src.training.trainer - INFO - Class imbalance detected (9.0:1). Using balanced class weights.
+2026-01-08 21:56:08 - src.utils.validation - INFO - Target distribution: {0: 103, 1: 97}
+2026-01-08 21:56:08 - src.training.trainer - INFO - Data split - Train: 139, Val: 31, Test: 30
+2026-01-08 21:56:08 - src.utils.validation - INFO - Target distribution: {0: 103, 1: 97}
+2026-01-08 21:56:08 - src.training.trainer - INFO - Data split - Train: 139, Val: 31, Test: 30
+2026-01-08 21:56:08 - src.training.trainer - INFO - Class imbalance detected (9.0:1). Using balanced class weights.
+2026-01-08 21:56:08 - src.training.trainer - INFO - Training model model_v1 from C:\Users\sidha\AppData\Local\Temp\tmp9nq1aj8b\train_data.csv
+2026-01-08 21:56:08 - src.training.trainer - INFO - Loaded 200 rows, 4 columns
+2026-01-08 21:56:08 - src.utils.validation - INFO - Target distribution: {0: 103, 1: 97}
+2026-01-08 21:56:08 - src.training.trainer - INFO - Data split - Train: 139, Val: 31, Test: 30
+2026-01-08 21:56:08 - src.training.trainer - INFO - Training with config: {'n_estimators': 100, 'max_depth': None, 'min_samples_split': 2, 'min_samples_leaf': 1, 'random_state': 42, 'class_weight': 'balanced', 'n_jobs': -1}
+2026-01-08 21:56:08 - src.training.trainer - INFO - Model saved to C:\Users\sidha\AppData\Local\Temp\tmp9nq1aj8b\models\model_v1\model.pkl
+2026-01-08 21:56:08 - src.training.trainer - INFO - Training complete for model_v1
+2026-01-08 21:56:08 - src.training.trainer - INFO - Training model model_v1 from C:\Users\sidha\AppData\Local\Temp\tmpsb0m6diw\train_data.csv
+2026-01-08 21:56:08 - src.training.trainer - INFO - Loaded 200 rows, 4 columns
+2026-01-08 21:56:08 - src.utils.validation - INFO - Target distribution: {0: 103, 1: 97}
+2026-01-08 21:56:08 - src.training.trainer - INFO - Data split - Train: 139, Val: 31, Test: 30
+2026-01-08 21:56:08 - src.training.trainer - INFO - Training with config: {'n_estimators': 100, 'max_depth': None, 'min_samples_split': 2, 'min_samples_leaf': 1, 'random_state': 42, 'class_weight': 'balanced', 'n_jobs': -1}
+2026-01-08 21:56:09 - src.training.trainer - INFO - Model saved to C:\Users\sidha\AppData\Local\Temp\tmpsb0m6diw\models\model_v1\model.pkl
+2026-01-08 21:56:09 - src.training.trainer - INFO - Training complete for model_v1
+2026-01-08 21:56:09 - src.training.trainer - INFO - Training model model_v1 from C:\Users\sidha\AppData\Local\Temp\tmp4_8i8ohd\tiny_data.csv
+2026-01-08 21:56:09 - src.training.trainer - INFO - Loaded 3 rows, 2 columns
+2026-01-08 21:56:09 - src.training.trainer - INFO - Training model model_v1 from C:\Users\sidha\AppData\Local\Temp\tmpbt6sipon\train_data.csv
+2026-01-08 21:56:09 - src.training.trainer - INFO - Loaded 200 rows, 4 columns
+2026-01-08 21:56:09 - src.utils.validation - INFO - Target distribution: {0: 103, 1: 97}
+2026-01-08 21:56:09 - src.training.trainer - INFO - Data split - Train: 139, Val: 31, Test: 30
+2026-01-08 21:56:09 - src.training.trainer - INFO - Training with config: {'n_estimators': 100, 'max_depth': None, 'min_samples_split': 2, 'min_samples_leaf': 1, 'random_state': 42, 'class_weight': 'balanced', 'n_jobs': -1}
+2026-01-08 21:56:09 - src.training.trainer - INFO - Model saved to C:\Users\sidha\AppData\Local\Temp\tmpbt6sipon\models\model_v1\model.pkl
+2026-01-08 21:56:09 - src.training.trainer - INFO - Training complete for model_v1
+2026-01-08 21:56:09 - src.training.evaluator - INFO - Evaluating model model_v1
+2026-01-08 21:56:09 - src.training.evaluator - INFO - Using saved test set for evaluation
+2026-01-08 21:56:09 - src.training.evaluator - INFO - Evaluating on 30 samples
+2026-01-08 21:56:09 - src.training.trainer - INFO - Training model model_v1 from C:\Users\sidha\AppData\Local\Temp\tmpea75b__b\train_data.csv
+2026-01-08 21:56:09 - src.training.trainer - INFO - Loaded 200 rows, 4 columns
+2026-01-08 21:56:09 - src.utils.validation - INFO - Target distribution: {0: 103, 1: 97}
+2026-01-08 21:56:09 - src.training.trainer - INFO - Data split - Train: 139, Val: 31, Test: 30
+2026-01-08 21:56:09 - src.training.trainer - INFO - Training with config: {'n_estimators': 100, 'max_depth': None, 'min_samples_split': 2, 'min_samples_leaf': 1, 'random_state': 42, 'class_weight': 'balanced', 'n_jobs': -1}
+2026-01-08 21:56:10 - src.training.trainer - INFO - Model saved to C:\Users\sidha\AppData\Local\Temp\tmpea75b__b\models\model_v1\model.pkl
+2026-01-08 21:56:10 - src.training.trainer - INFO - Training complete for model_v1
+2026-01-08 21:56:10 - src.training.evaluator - INFO - Evaluating model model_v1
+2026-01-08 21:56:10 - src.training.evaluator - INFO - Using saved test set for evaluation
+2026-01-08 21:56:10 - src.training.evaluator - INFO - Evaluating on 30 samples
+2026-01-08 21:56:37 - test_logger - INFO - Test log message
+2026-01-08 21:56:38 - src.utils.validation - INFO - Target distribution: {1: 57, 0: 43}
+2026-01-08 21:56:38 - src.training.trainer - INFO - Data split - Train: 69, Val: 16, Test: 15
+2026-01-08 21:56:38 - src.training.trainer - INFO - Class imbalance detected (9.0:1). Using balanced class weights.
+2026-01-08 21:56:39 - src.utils.validation - INFO - Target distribution: {0: 103, 1: 97}
+2026-01-08 21:56:39 - src.training.trainer - INFO - Data split - Train: 139, Val: 31, Test: 30
+2026-01-08 21:56:39 - src.utils.validation - INFO - Target distribution: {0: 103, 1: 97}
+2026-01-08 21:56:39 - src.training.trainer - INFO - Data split - Train: 139, Val: 31, Test: 30
+2026-01-08 21:56:39 - src.training.trainer - INFO - Class imbalance detected (9.0:1). Using balanced class weights.
+2026-01-08 21:56:39 - src.training.trainer - INFO - Training model model_v1 from C:\Users\sidha\AppData\Local\Temp\tmpxcfbffoi\train_data.csv
+2026-01-08 21:56:39 - src.training.trainer - INFO - Loaded 200 rows, 4 columns
+2026-01-08 21:56:39 - src.utils.validation - INFO - Target distribution: {0: 103, 1: 97}
+2026-01-08 21:56:39 - src.training.trainer - INFO - Data split - Train: 139, Val: 31, Test: 30
+2026-01-08 21:56:39 - src.training.trainer - INFO - Training with config: {'n_estimators': 100, 'max_depth': None, 'min_samples_split': 2, 'min_samples_leaf': 1, 'random_state': 42, 'class_weight': 'balanced', 'n_jobs': -1}
+2026-01-08 21:56:39 - src.training.trainer - INFO - Model saved to C:\Users\sidha\AppData\Local\Temp\tmpxcfbffoi\models\model_v1\model.pkl
+2026-01-08 21:56:39 - src.training.trainer - INFO - Training complete for model_v1
+2026-01-08 21:56:39 - src.training.trainer - INFO - Training model model_v1 from C:\Users\sidha\AppData\Local\Temp\tmpjyz7kmos\train_data.csv
+2026-01-08 21:56:39 - src.training.trainer - INFO - Loaded 200 rows, 4 columns
+2026-01-08 21:56:39 - src.utils.validation - INFO - Target distribution: {0: 103, 1: 97}
+2026-01-08 21:56:39 - src.training.trainer - INFO - Data split - Train: 139, Val: 31, Test: 30
+2026-01-08 21:56:39 - src.training.trainer - INFO - Training with config: {'n_estimators': 100, 'max_depth': None, 'min_samples_split': 2, 'min_samples_leaf': 1, 'random_state': 42, 'class_weight': 'balanced', 'n_jobs': -1}
+2026-01-08 21:56:39 - src.training.trainer - INFO - Model saved to C:\Users\sidha\AppData\Local\Temp\tmpjyz7kmos\models\model_v1\model.pkl
+2026-01-08 21:56:39 - src.training.trainer - INFO - Training complete for model_v1
+2026-01-08 21:56:39 - src.training.trainer - INFO - Training model model_v1 from C:\Users\sidha\AppData\Local\Temp\tmppjeebtdo\tiny_data.csv
+2026-01-08 21:56:39 - src.training.trainer - INFO - Loaded 3 rows, 2 columns
+2026-01-08 21:56:39 - src.training.trainer - INFO - Training model model_v1 from C:\Users\sidha\AppData\Local\Temp\tmplzte484h\train_data.csv
+2026-01-08 21:56:39 - src.training.trainer - INFO - Loaded 200 rows, 4 columns
+2026-01-08 21:56:39 - src.utils.validation - INFO - Target distribution: {0: 103, 1: 97}
+2026-01-08 21:56:39 - src.training.trainer - INFO - Data split - Train: 139, Val: 31, Test: 30
+2026-01-08 21:56:39 - src.training.trainer - INFO - Training with config: {'n_estimators': 100, 'max_depth': None, 'min_samples_split': 2, 'min_samples_leaf': 1, 'random_state': 42, 'class_weight': 'balanced', 'n_jobs': -1}
+2026-01-08 21:56:40 - src.training.trainer - INFO - Model saved to C:\Users\sidha\AppData\Local\Temp\tmplzte484h\models\model_v1\model.pkl
+2026-01-08 21:56:40 - src.training.trainer - INFO - Training complete for model_v1
+2026-01-08 21:56:40 - src.training.evaluator - INFO - Evaluating model model_v1
+2026-01-08 21:56:40 - src.training.evaluator - INFO - Using saved test set for evaluation
+2026-01-08 21:56:40 - src.training.evaluator - INFO - Evaluating on 30 samples
+2026-01-08 21:56:40 - src.training.trainer - INFO - Training model model_v1 from C:\Users\sidha\AppData\Local\Temp\tmpftmmxj8p\train_data.csv
+2026-01-08 21:56:40 - src.training.trainer - INFO - Loaded 200 rows, 4 columns
+2026-01-08 21:56:40 - src.utils.validation - INFO - Target distribution: {0: 103, 1: 97}
+2026-01-08 21:56:40 - src.training.trainer - INFO - Data split - Train: 139, Val: 31, Test: 30
+2026-01-08 21:56:40 - src.training.trainer - INFO - Training with config: {'n_estimators': 100, 'max_depth': None, 'min_samples_split': 2, 'min_samples_leaf': 1, 'random_state': 42, 'class_weight': 'balanced', 'n_jobs': -1}
+2026-01-08 21:56:41 - src.training.trainer - INFO - Model saved to C:\Users\sidha\AppData\Local\Temp\tmpftmmxj8p\models\model_v1\model.pkl
+2026-01-08 21:56:41 - src.training.trainer - INFO - Training complete for model_v1
+2026-01-08 21:56:41 - src.training.evaluator - INFO - Evaluating model model_v1
+2026-01-08 21:56:41 - src.training.evaluator - INFO - Using saved test set for evaluation
+2026-01-08 21:56:41 - src.training.evaluator - INFO - Evaluating on 30 samples
+2026-01-08 21:58:22 - test_logger - INFO - Test log message
+2026-01-08 21:58:23 - src.utils.validation - INFO - Target distribution: {1: 57, 0: 43}
+2026-01-08 21:58:23 - src.training.trainer - INFO - Data split - Train: 69, Val: 16, Test: 15
+2026-01-08 21:58:23 - src.training.trainer - INFO - Class imbalance detected (9.0:1). Using balanced class weights.
+2026-01-08 21:59:37 - test_logger - INFO - Test log message
+2026-01-08 21:59:37 - src.utils.validation - INFO - Target distribution: {1: 57, 0: 43}
+2026-01-08 21:59:37 - src.training.trainer - INFO - Data split - Train: 69, Val: 16, Test: 15
+2026-01-08 21:59:38 - src.training.trainer - INFO - Class imbalance detected (9.0:1). Using balanced class weights.
+2026-01-08 21:59:38 - src.utils.validation - INFO - Target distribution: {0: 103, 1: 97}
+2026-01-08 21:59:38 - src.training.trainer - INFO - Data split - Train: 139, Val: 31, Test: 30
+2026-01-08 21:59:38 - src.utils.validation - INFO - Target distribution: {0: 103, 1: 97}
+2026-01-08 21:59:38 - src.training.trainer - INFO - Data split - Train: 139, Val: 31, Test: 30
+2026-01-08 21:59:38 - src.training.trainer - INFO - Class imbalance detected (9.0:1). Using balanced class weights.
+2026-01-08 21:59:38 - src.training.trainer - INFO - Training model model_v1 from C:\Users\sidha\AppData\Local\Temp\tmpfw5hrrc6\train_data.csv
+2026-01-08 21:59:38 - src.training.trainer - INFO - Loaded 200 rows, 4 columns
+2026-01-08 21:59:38 - src.utils.validation - INFO - Target distribution: {0: 103, 1: 97}
+2026-01-08 21:59:38 - src.training.trainer - INFO - Data split - Train: 139, Val: 31, Test: 30
+2026-01-08 21:59:38 - src.training.trainer - INFO - Training with config: {'n_estimators': 100, 'max_depth': None, 'min_samples_split': 2, 'min_samples_leaf': 1, 'random_state': 42, 'class_weight': 'balanced', 'n_jobs': -1}
+2026-01-08 21:59:39 - src.training.trainer - INFO - Model saved to C:\Users\sidha\AppData\Local\Temp\tmpfw5hrrc6\models\model_v1\model.pkl
+2026-01-08 21:59:39 - src.training.trainer - INFO - Training complete for model_v1
+2026-01-08 21:59:39 - src.training.trainer - INFO - Training model model_v1 from C:\Users\sidha\AppData\Local\Temp\tmphoocvxnp\train_data.csv
+2026-01-08 21:59:39 - src.training.trainer - INFO - Loaded 200 rows, 4 columns
+2026-01-08 21:59:39 - src.utils.validation - INFO - Target distribution: {0: 103, 1: 97}
+2026-01-08 21:59:39 - src.training.trainer - INFO - Data split - Train: 139, Val: 31, Test: 30
+2026-01-08 21:59:39 - src.training.trainer - INFO - Training with config: {'n_estimators': 100, 'max_depth': None, 'min_samples_split': 2, 'min_samples_leaf': 1, 'random_state': 42, 'class_weight': 'balanced', 'n_jobs': -1}
+2026-01-08 21:59:39 - src.training.trainer - INFO - Model saved to C:\Users\sidha\AppData\Local\Temp\tmphoocvxnp\models\model_v1\model.pkl
+2026-01-08 21:59:39 - src.training.trainer - INFO - Training complete for model_v1
+2026-01-08 21:59:39 - src.training.trainer - INFO - Training model model_v1 from C:\Users\sidha\AppData\Local\Temp\tmphn9tvhae\tiny_data.csv
+2026-01-08 21:59:39 - src.training.trainer - INFO - Loaded 3 rows, 2 columns
+2026-01-08 21:59:39 - src.training.trainer - INFO - Training model model_v1 from C:\Users\sidha\AppData\Local\Temp\tmpmtnf684j\train_data.csv
+2026-01-08 21:59:39 - src.training.trainer - INFO - Loaded 200 rows, 4 columns
+2026-01-08 21:59:39 - src.utils.validation - INFO - Target distribution: {0: 103, 1: 97}
+2026-01-08 21:59:39 - src.training.trainer - INFO - Data split - Train: 139, Val: 31, Test: 30
+2026-01-08 21:59:39 - src.training.trainer - INFO - Training with config: {'n_estimators': 100, 'max_depth': None, 'min_samples_split': 2, 'min_samples_leaf': 1, 'random_state': 42, 'class_weight': 'balanced', 'n_jobs': -1}
+2026-01-08 21:59:39 - src.training.trainer - INFO - Model saved to C:\Users\sidha\AppData\Local\Temp\tmpmtnf684j\models\model_v1\model.pkl
+2026-01-08 21:59:39 - src.training.trainer - INFO - Training complete for model_v1
+2026-01-08 21:59:39 - src.training.evaluator - INFO - Evaluating model model_v1
+2026-01-08 21:59:39 - src.training.evaluator - INFO - Using saved test set for evaluation
+2026-01-08 21:59:39 - src.training.evaluator - INFO - Evaluating on 30 samples
+2026-01-08 21:59:40 - src.training.trainer - INFO - Training model model_v1 from C:\Users\sidha\AppData\Local\Temp\tmpc_d3_1st\train_data.csv
+2026-01-08 21:59:40 - src.training.trainer - INFO - Loaded 200 rows, 4 columns
+2026-01-08 21:59:40 - src.utils.validation - INFO - Target distribution: {0: 103, 1: 97}
+2026-01-08 21:59:40 - src.training.trainer - INFO - Data split - Train: 139, Val: 31, Test: 30
+2026-01-08 21:59:40 - src.training.trainer - INFO - Training with config: {'n_estimators': 100, 'max_depth': None, 'min_samples_split': 2, 'min_samples_leaf': 1, 'random_state': 42, 'class_weight': 'balanced', 'n_jobs': -1}
+2026-01-08 21:59:40 - src.training.trainer - INFO - Model saved to C:\Users\sidha\AppData\Local\Temp\tmpc_d3_1st\models\model_v1\model.pkl
+2026-01-08 21:59:40 - src.training.trainer - INFO - Training complete for model_v1
+2026-01-08 21:59:40 - src.training.evaluator - INFO - Evaluating model model_v1
+2026-01-08 21:59:40 - src.training.evaluator - INFO - Using saved test set for evaluation
+2026-01-08 21:59:40 - src.training.evaluator - INFO - Evaluating on 30 samples
+2026-01-08 22:01:19 - test_logger - INFO - Test log message
+2026-01-08 22:01:19 - src.utils.validation - INFO - Target distribution: {1: 57, 0: 43}
+2026-01-08 22:01:19 - src.training.trainer - INFO - Data split - Train: 69, Val: 16, Test: 15
+2026-01-08 22:01:19 - src.training.trainer - INFO - Class imbalance detected (9.0:1). Using balanced class weights.
+2026-01-08 22:01:20 - src.utils.validation - INFO - Target distribution: {0: 103, 1: 97}
+2026-01-08 22:01:20 - src.training.trainer - INFO - Data split - Train: 139, Val: 31, Test: 30
+2026-01-08 22:01:20 - src.utils.validation - INFO - Target distribution: {0: 103, 1: 97}
+2026-01-08 22:01:20 - src.training.trainer - INFO - Data split - Train: 139, Val: 31, Test: 30
+2026-01-08 22:01:20 - src.training.trainer - INFO - Class imbalance detected (9.0:1). Using balanced class weights.
+2026-01-08 22:01:20 - src.training.trainer - INFO - Training model model_v1 from C:\Users\sidha\AppData\Local\Temp\tmp_kvb6fcc\train_data.csv
+2026-01-08 22:01:20 - src.training.trainer - INFO - Loaded 200 rows, 4 columns
+2026-01-08 22:01:20 - src.utils.validation - INFO - Target distribution: {0: 103, 1: 97}
+2026-01-08 22:01:20 - src.training.trainer - INFO - Data split - Train: 139, Val: 31, Test: 30
+2026-01-08 22:01:20 - src.training.trainer - INFO - Training with config: {'n_estimators': 100, 'max_depth': None, 'min_samples_split': 2, 'min_samples_leaf': 1, 'random_state': 42, 'class_weight': 'balanced', 'n_jobs': -1}
+2026-01-08 22:01:20 - src.training.trainer - INFO - Model saved to C:\Users\sidha\AppData\Local\Temp\tmp_kvb6fcc\models\model_v1\model.pkl
+2026-01-08 22:01:20 - src.training.trainer - INFO - Training complete for model_v1
+2026-01-08 22:01:20 - src.training.trainer - INFO - Training model model_v1 from C:\Users\sidha\AppData\Local\Temp\tmp08s5ll33\train_data.csv
+2026-01-08 22:01:20 - src.training.trainer - INFO - Loaded 200 rows, 4 columns
+2026-01-08 22:01:20 - src.utils.validation - INFO - Target distribution: {0: 103, 1: 97}
+2026-01-08 22:01:20 - src.training.trainer - INFO - Data split - Train: 139, Val: 31, Test: 30
+2026-01-08 22:01:20 - src.training.trainer - INFO - Training with config: {'n_estimators': 100, 'max_depth': None, 'min_samples_split': 2, 'min_samples_leaf': 1, 'random_state': 42, 'class_weight': 'balanced', 'n_jobs': -1}
+2026-01-08 22:01:21 - src.training.trainer - INFO - Model saved to C:\Users\sidha\AppData\Local\Temp\tmp08s5ll33\models\model_v1\model.pkl
+2026-01-08 22:01:21 - src.training.trainer - INFO - Training complete for model_v1
+2026-01-08 22:01:21 - src.training.trainer - INFO - Training model model_v1 from C:\Users\sidha\AppData\Local\Temp\tmp2weeqm5e\tiny_data.csv
+2026-01-08 22:01:21 - src.training.trainer - INFO - Loaded 3 rows, 2 columns
+2026-01-08 22:01:21 - src.training.trainer - INFO - Training model model_v1 from C:\Users\sidha\AppData\Local\Temp\tmpe9mlr4_o\train_data.csv
+2026-01-08 22:01:21 - src.training.trainer - INFO - Loaded 200 rows, 4 columns
+2026-01-08 22:01:21 - src.utils.validation - INFO - Target distribution: {0: 103, 1: 97}
+2026-01-08 22:01:21 - src.training.trainer - INFO - Data split - Train: 139, Val: 31, Test: 30
+2026-01-08 22:01:21 - src.training.trainer - INFO - Training with config: {'n_estimators': 100, 'max_depth': None, 'min_samples_split': 2, 'min_samples_leaf': 1, 'random_state': 42, 'class_weight': 'balanced', 'n_jobs': -1}
+2026-01-08 22:01:21 - src.training.trainer - INFO - Model saved to C:\Users\sidha\AppData\Local\Temp\tmpe9mlr4_o\models\model_v1\model.pkl
+2026-01-08 22:01:21 - src.training.trainer - INFO - Training complete for model_v1
+2026-01-08 22:01:21 - src.training.evaluator - INFO - Evaluating model model_v1
+2026-01-08 22:01:21 - src.training.evaluator - INFO - Using saved test set for evaluation
+2026-01-08 22:01:21 - src.training.evaluator - INFO - Evaluating on 30 samples
+2026-01-08 22:01:21 - src.training.trainer - INFO - Training model model_v1 from C:\Users\sidha\AppData\Local\Temp\tmpagjvstlb\train_data.csv
+2026-01-08 22:01:21 - src.training.trainer - INFO - Loaded 200 rows, 4 columns
+2026-01-08 22:01:21 - src.utils.validation - INFO - Target distribution: {0: 103, 1: 97}
+2026-01-08 22:01:21 - src.training.trainer - INFO - Data split - Train: 139, Val: 31, Test: 30
+2026-01-08 22:01:21 - src.training.trainer - INFO - Training with config: {'n_estimators': 100, 'max_depth': None, 'min_samples_split': 2, 'min_samples_leaf': 1, 'random_state': 42, 'class_weight': 'balanced', 'n_jobs': -1}
+2026-01-08 22:01:22 - src.training.trainer - INFO - Model saved to C:\Users\sidha\AppData\Local\Temp\tmpagjvstlb\models\model_v1\model.pkl
+2026-01-08 22:01:22 - src.training.trainer - INFO - Training complete for model_v1
+2026-01-08 22:01:22 - src.training.evaluator - INFO - Evaluating model model_v1
+2026-01-08 22:01:22 - src.training.evaluator - INFO - Using saved test set for evaluation
+2026-01-08 22:01:22 - src.training.evaluator - INFO - Evaluating on 30 samples
+2026-01-08 22:04:59 - __main__ - INFO - ================================================================================
+2026-01-08 22:04:59 - __main__ - INFO - AUTOMATED MONITORING PIPELINE
+2026-01-08 22:04:59 - __main__ - INFO - Started at: 2026-01-08T22:04:59.317494
+2026-01-08 22:04:59 - __main__ - INFO - ================================================================================
+2026-01-08 22:04:59 - __main__ - INFO - Running drift detection...
+2026-01-08 22:04:59 - __main__ - INFO - Analyzing drift for batch_v1.csv
+2026-01-08 22:04:59 - __main__ - ERROR - Drift detection failed: Failed to load registry: Registry missing required key: history
+Traceback (most recent call last):
+  File "C:\Users\sidha\continual-learning-system\src\registry\model_registry.py", line 106, in load_registry
+    _validate_registry_schema(registry)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\sidha\continual-learning-system\src\registry\model_registry.py", line 75, in _validate_registry_schema
+    raise RegistryError(f"Registry missing required key: {key}")
+src.registry.model_registry.RegistryError: Registry missing required key: history
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\sidha\continual-learning-system\scripts\run_monitoring_pipeline.py", line 40, in run_drift_detection
+    ref_stats, version = load_latest_reference_stats()
+                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\sidha\continual-learning-system\src\monitoring\drift_detector.py", line 17, in load_latest_reference_stats
+    model_entry = get_production_model()
+  File "C:\Users\sidha\continual-learning-system\src\registry\model_registry.py", line 310, in get_production_model
+    registry = load_registry()
+  File "C:\Users\sidha\continual-learning-system\src\registry\model_registry.py", line 112, in load_registry
+    raise RegistryError(f"Failed to load registry: {e}")
+src.registry.model_registry.RegistryError: Failed to load registry: Registry missing required key: history
+2026-01-08 22:04:59 - __main__ - INFO - No retraining triggered - drift levels within acceptable range
+2026-01-08 22:04:59 - __main__ - INFO - ================================================================================
+2026-01-08 22:04:59 - __main__ - INFO - Monitoring pipeline complete
+2026-01-08 22:04:59 - __main__ - INFO - ================================================================================

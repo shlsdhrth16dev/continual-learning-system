@@ -7,26 +7,29 @@ from typing import Dict, Any, Tuple
 import numpy as np
 import pandas as pd
 
-from src.registry.model_registry import get_latest_version
+from src.registry.model_registry import get_production_model, list_all_models
 
-# Configuration
-logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
-logger = logging.getLogger(__name__)
-
-REFERENCE_STATS_DIR = Path("data/reference")
-DRIFT_REPORTS_DIR = Path("data/drift_reports")
-INFERENCE_DATA_DIR = Path("data/inference")
-
-PSI_THRESHOLD = 0.2
-Z_SCORE_THRESHOLD = 3.0
+# ...
 
 def load_latest_reference_stats() -> Tuple[Dict[str, Any], str]:
     """Loads reference stats matching the latest model version."""
-    latest_v = get_latest_version()
-    if not latest_v:
+    # Try getting production model first
+    model_entry = get_production_model()
+    
+    # Fallback to latest registered model if no production model
+    if not model_entry:
+        all_models = list_all_models()
+        if all_models:
+            # Sort by created_at just to be safe
+            all_models.sort(key=lambda x: x.get('created_at', ''), reverse=True)
+            model_entry = all_models[0]
+            
+    if not model_entry:
         raise RuntimeError("No model versions found in registry.")
     
+    latest_v = model_entry['version']
     stats_path = REFERENCE_STATS_DIR / f"feature_stats_{latest_v}.json"
+    
     if not stats_path.exists():
         raise FileNotFoundError(f"Reference stats not found at {stats_path}")
     
